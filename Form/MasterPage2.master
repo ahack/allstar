@@ -1,0 +1,156 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="Form_MasterPage2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ALL STAR</title>
+     <style type="text/css">  
+        .accordion {  
+            width: 1000px;  
+            padding-left:100px;
+        }  
+          
+        .accordionHeader {  
+            border: 1px solid #2F4F4F;  
+            color: white;  
+            background-color: #3f3f3f;  
+            font-family: georgia, Arial, Sans-Serif;  
+            font-size: 14px;  
+            font-weight: bold;  
+            padding: 5px;  
+            margin-top: 5px;  
+            cursor: pointer;  
+        }  
+          
+        .accordionHeaderSelected {  
+           border: 1px solid #2F4F4F;  
+            color: white;  
+            background-color: #636363;  
+            font-family: georgia, Arial, Sans-Serif;  
+            font-size: 14px;  
+            font-weight: bold;  
+            padding: 5px;  
+            margin-top: 5px;  
+            cursor: pointer;  
+        }  
+          
+        .accordionContent {  
+            background-color: #fffff;  
+            border: 1px dotted #2F4F4F;  
+            border-top: none;  
+            padding: 5px;  
+            padding-top: 10px;  
+        }          
+        .a:link    {color:Blue;}
+        .a:visited {color:Navy;}
+        .a:hover   {color:red;}  
+        
+        .Btn
+        {
+            font-family :Georgia;
+            font-size : 12px;
+            Color: Blue;
+            border:0;
+            background-color: transparent;  
+        }   
+        .Btn:Hover
+        {
+            text-decoration:Underline;
+        }      
+    </style> 
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ScriptManager ID="ScriptManager" runat="server">
+            </asp:ScriptManager>
+            <table style="width: 100%;" class="TableMaster">                
+                <tr class="Toplayer">
+                    <td class="Toplayer">
+                        <table>
+                            <tr>
+                                <td style="height: 30px; width: 600px;" class="LblHeading">
+                                    ALL STAR</td>
+                                <td style="width: 300px;" align="right" valign="bottom">                                    
+                                    <asp:Button ID="lnkOthers" runat="server"  CssClass="Btn" Font-Bold="true" Font-Size="Larger" ForeColor="white" OnClick="lnkOthers_Click" Text="Break"></asp:Button>
+                                    <br />
+                                    <asp:Label ID="Lblusername" runat="server" CssClass="username1" Font-Bold="true" Font-Size="Medium" ForeColor="white"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="right">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%">                            
+                            <tr>
+                                <td colspan="3" valign="middle" align="center">
+                                    <table class="Placetable" style="width: 98%;">
+                                        <tr>
+                                          <td valign="Top" align="left" style="width: 200px;">
+                                              &nbsp;</td>  
+                                          <td align ="right"><asp:Button ID="LnkLogout" runat="server" Text="LogOut" 
+                                                  OnClick="LnkLogout_Click" CssClass="Btn" Font-Bold="True" Font-Size="Large"></asp:Button></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom" align="center" style="height: 30px;" class="BottomLayer">
+                        © String Information Services Pvt. Ltd. 2016 - All Rights Reserved ®.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="page_dimmer" id="pagedimmer" runat="server"></div>
+            <div class="OtherbreakMsgbx" id="Other_breakMsgbx" runat="server" align="center">
+                <table width="600px">     
+                    <tr>
+                        <td colspan="2" class="PagedimmerMsg" align="center" style="height: 36px">
+                            <asp:Label ID="lbltext" runat="server" Font-Names="Georgia" ForeColor="black" Font-Bold="true" Font-Size="Larger" Text="Break Comments"></asp:Label>
+                        </td>
+                    </tr>        
+                    <tr>                                            
+                         <td align="center"><asp:Label ID="Lblcomments" runat="server" Text="Enter the Comments :" CssClass="PagedimmerMsg" ForeColor="black"></asp:Label>&nbsp;</td>
+                         <td align="left"><asp:TextBox ID="txtcomments" runat="server" TextMode="MultiLine" Font-Names="Georgia" Height="50px" Width="400px"></asp:TextBox></td>                
+                    </tr>        
+                    <tr><td colspan="2" style="height:10px;"></td></tr>
+                    <tr><td align="center" colspan="2" style="height: 33px"><asp:Button ID="Btnok" runat="server" Text="Ok" OnClick="Btnok_Click" CssClass="fb5"/></td>
+                    </tr>
+                    <tr><td colspan="2" align="center"><asp:Label ID="lblothererror" runat="server" CssClass="ErrorLabel"></asp:Label> </td></tr>
+                </table> 
+            </div>
+            <div class="OtherbreakMsgbx" id="Other_logoutMsgbx" runat="server" align="center" visible="false">
+                <table width="600px">     
+                    <tr>
+                        <td colspan="2" class="PagedimmerMsg" align="center" style="height: 36px">
+                            <asp:Label ID="Label1" runat="server" Font-Names="Georgia" ForeColor="black" Font-Bold="true" Font-Size="Larger" Text="Logout Reason"></asp:Label>
+                        </td>
+                    </tr>        
+                    <tr>                                            
+                         <td align="center"><asp:Label ID="Label2" runat="server" Text="Enter the Comments :" CssClass="PagedimmerMsg" ForeColor="black"></asp:Label></td>
+                         <td align="left"><asp:TextBox ID="txtlogoutreason" runat="server" TextMode="MultiLine" Font-Names="Georgia" Height="50px" Width="400px"></asp:TextBox></td>                
+                    </tr>        
+                    <tr><td colspan="2" style="height:10px;"></td></tr>
+                    <tr><td align="center" colspan="2" style="height: 33px">
+                        <asp:Button ID="btnlogoutresaon" runat="server" Text="Ok"  CssClass="fb5" 
+                            onclick="btnlogoutresaon_Click"/></td>
+                    </tr>
+                    <tr><td colspan="2" align="center"><asp:Label ID="Label3" runat="server" CssClass="ErrorLabel"></asp:Label> </td></tr>
+                </table> 
+            </div>
+    </form>
+</body>
+</html>

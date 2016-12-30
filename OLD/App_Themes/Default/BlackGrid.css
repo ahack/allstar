@@ -1,0 +1,113 @@
+﻿/*GridViewCSS Glass Black Style*/
+.GridViewStyle
+{
+    font-family: Georgia, Arial, Sans-Serif;
+    font-size:12px;
+    table-layout: auto;
+    border-collapse: collapse;
+    border: GridUser 5px solid;
+    white-space:pre-line;
+    border-color:#5d5d5d;
+}
+/*Header and Pager styles*/
+.HeaderStyle, .PagerStyle /*Common Styles*/
+{
+	background-image: url(./Images/menu.png);
+   /* background-image: url(./Images/dBlack.png); */
+    background-position:center;
+    background-repeat:repeat;
+    color:#ffffff;
+    background-color:#666666;/*#1d1d1d;*/
+    white-space:pre-line;
+    
+}
+.HeaderStyle th
+{
+    padding: 5px;
+    color:#ffffff;/*#60b3ff;/*#FFFF66;ffffff*/
+    white-space:pre-line;
+}
+.HeaderStyle a
+{
+    /*text-decoration:none;*/
+    color:#ffffff;/*#FFFF6;ffffff*/
+    /*display:block;*/
+    text-align:left;
+    	white-space:pre-line;
+    /*font-weight:normal;*/
+}
+.HeaderStyle a:hover
+{
+    text-decoration:none;
+    color:#ffffff;/*ffffff*/
+    /*display:block;*/
+    text-align:left;
+    /*font-weight:normal;*/
+}
+.PagerStyle table
+{
+    text-align:center;
+    margin:auto;
+}
+.PagerStyle table td
+{
+    border:0px;
+    padding:5px;
+}
+.PagerStyle td
+{
+    border-top: #1d1d1d 3px solid;
+}
+.PagerStyle a
+{
+    color:#60b3ff;/*#ffffff;*/
+    text-decoration:none;
+    padding:2px 10px 2px 10px;
+    border-top:solid 1px #60b3ff;/*#777777;*/
+    border-right:solid 1px #60b3ff;/*#333333;*/
+    border-bottom:solid 1px #60b3ff;/*#333333;*/
+    border-left:solid 1px #60b3ff;/*#777777;*/
+}
+.PagerStyle span
+{
+    font-weight:bold;
+    color:#60b3ff;/*#FFFFFF;*/
+    text-decoration:none;
+    padding:2px 10px 2px 10px;
+}
+/*RowStyles*/
+.RowStyle td, .AltRowStyle td, .SelectedRowStyle td, .EditRowStyle td 
+{
+    padding: 5px;
+    	white-space:pre-line;
+}
+.RowStyle td
+{
+    
+    background-color:#E5E5E5;
+    color:Black;
+    	white-space:pre-line;
+}
+.RowStyle a
+{
+	color:white;
+		white-space:pre-line;
+}
+.AltRowStyle a
+{
+	color:#E5E5E5;
+		white-space:pre-line;
+}
+.AltRowStyle td
+{	
+    
+    background-color:white;
+    color:black;
+    	white-space:pre-line;
+}
+.SelectedRowStyle td
+{
+    background-color: #ffff66;
+    	white-space:pre-line;
+    
+}

@@ -1,0 +1,55 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:GridView SkinID="GridUser1" AlternatingRowStyle-Wrap="false" RowStyle-Wrap="false" runat="server" AllowPaging="false" AllowSorting="True"
+    AutoGenerateColumns="false" CssClass="GridViewStyle" GridLines="Both" ForeColor="Black">
+    <RowStyle CssClass="RowStyle" />
+    <EmptyDataRowStyle CssClass="EmptyRowStyle" />
+    <PagerStyle CssClass="PagerStyle" />
+    <SelectedRowStyle CssClass="SelectedRowStyle" />
+    <HeaderStyle CssClass="HeaderStyle"/>
+    <EditRowStyle CssClass="EditRowStyle" />
+    <AlternatingRowStyle CssClass="AltRowStyle" />
+</asp:GridView>
+<asp:GridView skinid="GridTrackingNew" runat="server" CellPadding="4" ForeColor="#333333" GridLines="Both">
+    <FooterStyle BackColor="#0072E9" Font-Bold="True" ForeColor="White" />
+    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+    <EditRowStyle BackColor="#999999" />
+    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="False" ForeColor="#333333" />
+    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+    <HeaderStyle ForeColor="#ffffff" CssClass="HeaderStyle" Font-Size="12px" />
+    <AlternatingRowStyle BackColor="White" ForeColor="#284775" BorderColor="Silver" />
+</asp:GridView>
+<asp:GridView SkinID="GridUser" runat="server" AllowPaging="false" AutoGenerateColumns="true" CssClass="GridViewStyle" GridLines="Both" ForeColor="Black">
+    <RowStyle CssClass="RowStyle" />
+    <EmptyDataRowStyle CssClass="EmptyRowStyle" />
+    <PagerStyle CssClass="PagerStyle" />
+    <SelectedRowStyle CssClass="SelectedRowStyle" />
+    <HeaderStyle ForeColor="#ffffff" CssClass="HeaderStyle"/>
+    <EditRowStyle CssClass="EditRowStyle" />
+    <AlternatingRowStyle CssClass="AltRowStyle" />
+</asp:GridView>
+<asp:DetailsView SkinID="DetailsViewc" runat="server" CellPadding="4"
+    ForeColor="#333333" Height="60px" Width="125px" BorderColor="Black">
+    <FooterStyle BackColor="#839FA3" Font-Bold="True" ForeColor="White" />
+    <CommandRowStyle BackColor="#F7F6F3" Font-Bold="True"/>
+    <EditRowStyle BackColor="#2461BF" />
+    <RowStyle BackColor="#F7F6F3" />
+    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+    <FieldHeaderStyle CssClass="HeaderStyle" ForeColor="White" Font-Bold="True"/>
+    <HeaderStyle BackColor="#284775" Font-Bold="True" ForeColor="White"/>
+    <AlternatingRowStyle BackColor="white" />
+</asp:DetailsView> 

@@ -1,0 +1,389 @@
+﻿/* Calender */
+
+/*Ajax Calender*/
+.cal_Theme1 .ajax__calendar_container   {
+    background-color: #e2e2e2;
+    border:solid 1px #68655C;
+}
+
+.cal_Theme1 .ajax__calendar_header  {
+    background-color: #68655C;
+    margin-bottom: 4px;
+}
+
+.cal_Theme1 .ajax__calendar_title,
+.cal_Theme1 .ajax__calendar_next,
+.cal_Theme1 .ajax__calendar_prev    {
+    color: #ffffff;
+    padding-top: 3px;
+}
+
+.cal_Theme1 .ajax__calendar_body    {
+    background-color: #e9e9e9;
+    border: solid 1px #cccccc;
+}
+
+.cal_Theme1 .ajax__calendar_dayname {
+    text-align:center;
+    font-weight:bold;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+
+.cal_Theme1 .ajax__calendar_day {
+    text-align:center;
+}
+
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_day,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_month,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_year,
+.cal_Theme1 .ajax__calendar_active  {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #68655C;
+}
+
+.cal_Theme1 .ajax__calendar_today   {
+    font-weight:bold;
+}
+
+.cal_Theme1 .ajax__calendar_other,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_today,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_title {
+    color: #bbbbbb;
+}
+
+/* Master Pagae */
+
+.TableMaster
+{
+	border: 1px solid gray;
+	border-raidus: 5px;		
+}
+.MiddleLayer
+{
+	/* background-image:url('Images/bg-body.jpg');
+	background-repeat:repeat ; */
+	background-color:#dddddc;
+}
+.page_dimmer
+{
+	position: fixed;
+	top:0px;
+	left:0px;
+	height: 100%;
+	width: 100%;
+	
+	background: rgba(0, 0, 0, 0.7);
+	/*filter: alpha(opacity=50); */
+	-moz-opacity: .50; 
+	/*opacity: .50; */
+	z-index: 50; 
+}
+.OtherbreakMsgbx
+{
+	position: fixed;
+	height: 175px;
+	width: 650px;
+	left: 30%;
+	top: 30%;
+	right: 20%;
+	border: solid 2px #ffffff;
+	z-index: 50;
+	color: #FFFFFF;
+	font-weight: bolder;
+	background-color: ActiveBorder  ;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;	
+}
+.ErrorLabel
+{
+	color:#FE4624;
+	font-family:Georgia, Verdana, Arial;
+	font-size:10pt;
+	font-weight:bold;
+}
+.PagedimmerMsg
+{
+	font-family:Georgia;
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;
+}
+.BottomLayer
+{  	
+	height:10px;
+	background-image:url('Images/header_side.jpg');
+	background-repeat:repeat;
+	font-family:Georgia;
+	font-size:12px;	
+	color:White  ;
+}
+.Bottomtxt
+{
+	font-family:Georgia;
+	font-size:12px;	
+	color:Gray  ;
+}
+.Logout
+{
+	font-family:Georgia;
+	font-size:12px;	
+	color: White;
+	text-align:center;
+	text-decoration:none;
+}
+.Logout:hover
+{	
+	font-weight:bold;
+	text-decoration:underline;
+}
+.Toplayer
+{
+	background-image:url('Images/header_side.jpg');
+	background-repeat:repeat;
+}
+.TableContent
+{
+	background: #cccccc;
+	border-bottom:1px solid gray;
+}
+.Content
+{
+	background: #cccccc;
+	border-bottom:1px solid gray;	
+}
+.Placetable
+{
+	background:#DDDCDE;	
+	border:1px solid gray;
+	-webkit-box-shadow: -2px 2px 3px #666666;
+    -moz-box-shadow: -2px 2px 3px #666666;	
+}
+.username
+{
+	font-family:Georgia;
+	font-weight:bold;
+	font-size:12px;
+	color:#606060;	
+	padding-top:30px;
+	
+}
+
+/* CSS MENU */
+
+.cssmenu ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+	position:relative;
+	display:block;
+	height:36px;
+	text-transform:uppercase;
+	font-size:12px;	
+	background:transparent url('images/OFF.gif') repeat-x top left;
+	font-family:Georgia,Helvetica,Arial,Verdana,sans-serif;
+	border-bottom:4px solid #555555;
+	border-top:1px solid #919191;
+}
+.cssmenu li{
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	}
+.cssmenu li a{
+	display:block;
+	float:left;
+	color:#010101;
+	text-decoration:none;	
+	padding:12px 20px 0 20px;
+	height:24px;
+	background:transparent url('images/DIVIDER.gif') no-repeat top right;
+	}
+.cssmenu li a:hover{
+	background:transparent url('images/HOVER.gif') no-repeat top right;	
+	font-weight:bold;
+	}
+.currentmenu
+	{
+	background:url('images/HOVER.gif') no-repeat top right;	
+	font-weight:bold;	
+	}	
+
+
+/* Login Page */
+
+.LoginTable
+{
+	border:1px solid Gray;
+}
+.tdBackcolor
+{
+	background:gray;
+	font-family:Georgia;
+	font-weight:bold;
+	font-size:12px;
+	color:White;
+}
+.Loginlbl
+{
+	font-family:Georgia;
+	font-size:12px;
+	padding-left:8px;	
+}
+.info
+{
+	font-family:Georgia;
+	font-size:12px;	
+}
+.Logintxt
+{	
+	background-image:url(images/form_bg.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	width: 230px;
+	height: 20px;
+	color:#333333;
+	padding:3px;
+	margin-right:4px;
+	margin-bottom:8px;
+	font-family:tahoma, arial, sans-serif;
+	font-size:15px;
+}
+.fb5 {
+	background-color: #db6600;
+	padding-left:6px;
+	padding-right:6px;
+	padding-top:3px;
+	padding-bottom:3px;	
+	color: #ffffff;
+	font-weight:bold;
+	border:1px solid #db6600;
+	background-image: url(images/button_bg.jpg);
+}
+.fb5:hover {
+	background-color: #000000;	
+	border:1px solid #000000;
+	background-image: url(images/button_bg_over.jpg);
+}
+.LiteralErr
+{
+	font-family:Georgia;
+	font-size:12px;
+	font-weight:bold;
+	color:Red;	
+}
+
+/* SideMenu */
+
+.urbangreymenu{
+width: 170px; /*width of menu*/
+border-bottom:1px solid gray ;
+}
+
+.urbangreymenu .headerbar{
+font: bold 13px Georgia;
+color: white;
+background: #606060 url(images/arrowstop.gif) no-repeat 8px 6px; /*last 2 values are the x and y coordinates of bullet image*/
+margin-bottom: 0; /*bottom spacing between header and rest of content*/
+text-transform: uppercase;
+padding: 7px 0 7px 31px; /*31px is left indentation of header text*/
+}
+
+.urbangreymenu ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-bottom: 0; /*bottom spacing between each UL and rest of content*/
+}
+
+.urbangreymenu ul li{
+padding-bottom: 2px; /*bottom spacing between menu items*/
+}
+
+.urbangreymenu ul li a{
+font: normal 12px Georgia;
+color: black;
+background: #E9E9E9;
+display: block;
+padding: 5px 0;
+line-height: 17px;
+padding-left: 10px; /*link text is indented 8px*/
+text-decoration: none;
+}
+
+.urbangreymenu ul li a:visited{
+color: black;
+}
+
+.urbangreymenu ul li a:hover{ /*hover state CSS*/
+color: white;
+background: black;
+padding-left: 15px; /*link text is indented 8px*/
+font-weight:bold;
+}
+.sidetable
+{
+	border:1px solid gray ;
+}
+
+.Heading
+{
+	font-family:Georgia;
+	font-size:13px;
+	font-weight:bold;
+	color:Gray;
+}
+.status
+{
+	font-family:Georgia;
+	font-size:13px;
+	font-weight:bold;
+	color:Black;
+}
+
+/* Assing Job */
+
+.Btnimage
+{
+	background: transparent url('images/right.png') no-repeat top;
+}
+.ResetTable
+{
+	border:1px solid Gray;
+}
+.StatusBtn
+{
+	border:1px solid Gray;
+	border-radius: 5px 5px 5px 5px;
+}
+.StatusBtn1
+{
+	border-bottom  :2px solid Gray;
+	border-top :2px solid Gray;
+	border-radius: 5px 5px 5px 5px;
+}
+.ProductionTbl
+{
+	border:1px solid Gray;
+	border-radius:8px;
+}
+.Lbldate
+{
+	color:White;
+	font-family:Georgia;
+	font-size:15px;
+	font-weight:bold;
+}
+.LblHeading
+{
+	color:White;
+	font-family:Georgia;
+	font-size:20px;
+	font-weight:bold;
+	padding-left:180px;
+}
+
+.textboxupper{text-transform:uppercase}

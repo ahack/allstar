@@ -1,0 +1,109 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Form_MasterPage" %>
+<%@ Register Src="~/Usercontrols/Menu.ascx" TagName="admin" TagPrefix="admin" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="div">
+            <asp:ScriptManager ID="ScriptManager" runat="server">
+            </asp:ScriptManager>
+            <table style="width: 100%;" class="TableMaster">
+                <tr>
+                    <td style="height: 5px;">
+                    </td>
+                </tr>
+                <tr class="Toplayer">
+                    <td class="Toplayer">
+                        <table>
+                            <tr>
+                                <td style="height: 80px; width: 800px;" class="LblHeading" align="left" 
+                                    colspan="1">
+                                    ALL STAR</td>
+                                <td style="width: 270px;" align="right" valign="Middle">
+                                    <table style="width: 270px; height: 70px;">
+                                        <tr>
+                                            <td align="right">
+                                                <asp:LinkButton ID="Lnklogout" runat="server" CssClass="Logout" Text="SignOut" OnClick="Lnklogout_Click"></asp:LinkButton></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <asp:LinkButton ID="lnkOthers" runat="server"  CssClass="Logout" Font-Bold="true" Font-Size="Large" OnClick="lnkOthers_Click" Text="Break"></asp:LinkButton>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="bottom">
+                                                <asp:Label ID="DateLabel" runat="server" CssClass="Lbldate"></asp:Label></td>                                        
+                                        </tr>                                                
+                                        <tr>
+                                            <td valign="bottom">
+                                                <asp:Label ID="Lbusername" runat="server" CssClass="Lbldate"></asp:Label></td>                                        
+                                        </tr>                                                
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+                <tr>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <td valign="Top" align="left" style="width: 200px;">
+                                    <asp:Image ID="Img1" runat="server" ImageUrl="~/App_Themes/Default/Images/Stringlogotransparent.gif" />
+                                </td>
+                                <td valign="Middle" align="left">
+                                    <admin:admin ID="admin" runat="server" />
+                                </td>
+                                <td style="width: 5px;">
+                                    &nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" valign="middle" align="center">
+                                    <table class="Placetable" style="width: 98%;">
+                                        <tr>
+                                            <td>
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom" align="center" style="height: 30px;" class="BottomLayer">
+                        © String Information Services Pvt. Ltd. 2015 - All Rights Reserved ®.
+                    </td>
+                </tr>
+        </div>
+        
+        
+        
+         <div class="page_dimmer" id="pagedimmer" runat="server"></div>
+            <div class="OtherbreakMsgbx" id="Other_breakMsgbx" runat="server" align="center">
+                <table width="600px">     
+                    <tr>
+                        <td colspan="2" class="PagedimmerMsg" align="center" style="height: 36px">
+                            <asp:Label ID="lbltext" runat="server" Font-Names="Georgia" ForeColor="black" Font-Bold="true" Font-Size="Larger" Text="Break Comments"></asp:Label>
+                        </td>
+                    </tr>        
+                    <tr>                                            
+                         <td align="center"><asp:Label ID="Lblcomments" runat="server" Text="Enter the Comments :" CssClass="PagedimmerMsg" ForeColor="black"></asp:Label></td>
+                         <td align="left"><asp:TextBox ID="txtcomments" runat="server" TextMode="MultiLine" Font-Names="Georgia" Height="50px" Width="400px"></asp:TextBox></td>                
+                    </tr>        
+                    <tr><td colspan="2" style="height:10px;"></td></tr>
+                    <tr><td align="center" colspan="2" style="height: 33px"><asp:Button ID="Btnok" runat="server" Text="Ok" OnClick="Btnok_Click" CssClass="fb5"/></td>
+                    </tr>
+                    <tr><td colspan="2" align="center"><asp:Label ID="lblothererror" runat="server" CssClass="ErrorLabel"></asp:Label> </td></tr>
+                </table> 
+            </div>
+
+    </form>
+</body>
+</html>
